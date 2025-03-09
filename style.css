@@ -34,7 +34,7 @@ img {
 }
 
 header {
-	background-image: url(C:/Users/Kei/VScord/tbte/images/bg-header.png);
+	background-image: url(images/bg-header.png);
 	color: #ffffff;
 	height: 150px;
 }
@@ -81,10 +81,14 @@ div[id^="max_width"] {
 	margin: 0px auto;
 	-webkit-box-shadow: 3px 3px 3px 0px #C8C8C8;
 	box-shadow: 3px 3px 3px 0px #C8C8C8;
+	padding:145px;
+	margin:0px;
+	color:#6C6C6C;
 }
 #stage ul {
 	padding: 0px;
 	position:relative;
+	top: -120px;
 }
 #stage ul li {
 	width: 100%;
@@ -97,7 +101,9 @@ div[id^="max_width"] {
 	height: auto;
 }
 #slide_control {
-	position: absolute;
+	position: relative;
+	top: 120px;
+	z-index: 1;
 }
 [id^='photo_'] {
 	cursor: pointer;
@@ -327,7 +333,8 @@ div[class^="bg-text"] p {
 }
 .modal dt {
 	float: left;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
+	margin: 10px;
 	border: 1px solid #E8E8E8;
 	background-color: #FFFFFF;
 }
@@ -338,8 +345,8 @@ div[class^="bg-text"] p {
 	display: none;
 }
 .modal_title {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom: -5px;
 	text-align: center;
 }
 #modal_bg {
@@ -586,6 +593,9 @@ div[class^="bg-text"] h1 {
 	padding-left: 5px;
 }
 }
+.site_title{
+	z-index: 1;
+}
 
 @media only screen and (min-width: 900px) { /* メニュー格納 | メニューの幅により変更 ｜ js とセットで変更 */
 .content_left {
@@ -625,7 +635,7 @@ div[class^="bg-text"] h1 {
 #nav_pc > ul > li > a:link {
 	padding: 0px;
 }
-#nav_pc > ul > li > a:visited {
+#ul > li > a:visited {
 	padding: 0px;
 }
 #nav_pc > ul > li > a:hover {
